@@ -127,7 +127,7 @@ def main(args):
     #print(new_fullgtf_numRT[['genome_id', '#ID', 'DGRcomp', 'count_RT_percontig', 'numRT', 'genome__numRT']]) #It should have 2263 RT rows
 
     # 10. Read the list of genome_ids__contig_ids from test6-09_nrseqRT_names
-    if args.input2 != 'None':    #if the file exists, run this part of the script
+    if args.input2 != 'None':    #if the file exists (not None), run this part of the script
         listnames = pd.read_csv(path_listnames, header = None)                                          #4 ARGS  #3300025682_87__1   #path_listnames = './test6-09_nrseqRT_names'
 
         listnames = listnames.rename({0:'genome__numRT'}, axis = 1)
